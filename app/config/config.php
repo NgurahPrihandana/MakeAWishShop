@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL','http://localhost/rent-car/public');
+define('BASEURL','http://localhost/makeawishshop/public');
 
 // database
 define('DB_HOST','localhost');

@@ -4,7 +4,7 @@
          <!-- Brand -->
          <div class="sidenav-header d-flex align-items-center">
              <a class="navbar-brand" href="../../pages/dashboards/dashboard.html">
-                 <img src="<?=BASEURL?>/assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+                 <img src="<?= BASEURL ?>/assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
              </a>
              <div class="ml-auto">
                  <!-- Sidenav toggler -->
@@ -29,52 +29,21 @@
                          </a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link <?= $data['set_active'] == "kategori" ? "active" : " " ?>" href="<?=BASEURL?>/admin/kategori">
+                         <a class="nav-link <?= $data['set_active'] == "kategori" ? "active" : " " ?>" href="<?= BASEURL ?>/admin/kategori">
                              <i class="ni ni-archive-2 text-green"></i>
                              <span class="nav-link-text">Kategori</span>
                          </a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="../../pages/charts.html">
+                         <a class="nav-link <?= $data['set_active'] == "product" ? "active" : " " ?>" href=" <?= BASEURL; ?>/admin/product">
                              <i class="ni ni-chart-pie-35 text-info"></i>
-                             <span class="nav-link-text">Charts</span>
+                             <span class="nav-link-text">Product</span>
                          </a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="../../pages/calendar.html">
+                         <a class="nav-link" href="<?= BASEURL; ?>/admin/message">
                              <i class="ni ni-calendar-grid-58 text-red"></i>
-                             <span class="nav-link-text">Calendar</span>
-                         </a>
-                     </li>
-                 </ul>
-                 <!-- Divider -->
-                 <hr class="my-3">
-                 <!-- Heading -->
-                 <h6 class="navbar-heading p-0 text-muted">Documentation</h6>
-                 <!-- Navigation -->
-                 <ul class="navbar-nav mb-md-3">
-                     <li class="nav-item">
-                         <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html" target="_blank">
-                             <i class="ni ni-spaceship"></i>
-                             <span class="nav-link-text">Getting started</span>
-                         </a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/foundation/colors.html" target="_blank">
-                             <i class="ni ni-palette"></i>
-                             <span class="nav-link-text">Foundation</span>
-                         </a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/components/alerts.html" target="_blank">
-                             <i class="ni ni-ui-04"></i>
-                             <span class="nav-link-text">Components</span>
-                         </a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/plugins/charts.html" target="_blank">
-                             <i class="ni ni-chart-pie-35"></i>
-                             <span class="nav-link-text">Plugins</span>
+                             <span class="nav-link-text">Message</span>
                          </a>
                      </li>
                  </ul>

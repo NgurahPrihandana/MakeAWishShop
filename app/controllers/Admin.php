@@ -18,6 +18,15 @@ class Admin extends Controller {
         $this->view('admin/kategori');
         $this->view('admin/layouts/footer');
     }
+
+    public function product() {
+        $data['set_active'] = "product";
+        $this->view('admin/layouts/header');
+        $this->view('admin/layouts/navbar', $data);
+        $this->view('admin/layouts/topnav');
+        $this->view('admin/product');
+        $this->view('admin/layouts/footer');
+    }
 }
 
 

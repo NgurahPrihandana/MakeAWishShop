@@ -6,4 +6,4 @@ define('BASEURL','http://localhost/makeawishshop/public');
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASS','');
-define('DB_NAME','db_projectSewa');
+define('DB_NAME','db_diklat');

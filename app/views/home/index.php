@@ -20,7 +20,7 @@
                              <div class="card m-xs-2 text-center h-100">
                                  <div class="card-body">
                                      <h5 class="card-title ">WORLDWIDE DELIVERY</h5>
-                                     <img src="images/icon/world-banner.svg" alt="">
+                                     <img src="<?=BASEURL?>/assets/images/icon/world-banner.svg" alt="">
                                      <p class="card-text f-quicksand">We accept and able to deliver our services for anyone
                                          all around the globe</p>
                                  </div>
@@ -30,7 +30,7 @@
                              <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="800">
                                  <div class="card-body">
                                      <h5 class="card-title">SECURE PAYMENTS & PRIVACY</h5>
-                                     <img src="images/icon/lock-banner.svg" alt="">
+                                     <img src="<?=BASEURL?>/assets/images/icon/lock-banner.svg" alt="">
                                      <p class="card-text f-quicksand">All the design or payments that our customer owns
                                          will be kept securely</p>
                                  </div>
@@ -40,7 +40,7 @@
                              <div class="card text-center h-100" data-aos="fade-left" data-aos-duration="800">
                                  <div class="card-body">
                                      <h5 class="card-title">SIMPLE RETURN</h5>
-                                     <img src="images/icon/delivery-banner.svg" alt="">
+                                     <img src="<?=BASEURL?>/assets/images/icon/delivery-banner.svg" alt="">
                                      <p class="card-text f-quicksand">We will guarantee that our products will be returned and fixed without anycomplicated method</p>
                                  </div>
                              </div>
@@ -64,7 +64,7 @@
                  <!--card-best-dress-->
                  <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
                      <div class="card border-0 card-best-dress-container" data-aos="fade-right" data-aos-duration="1000">
-                         <img src="images/best-dress.png" class="card-img-top" alt="...">
+                         <img src="<?=BASEURL?>/assets/images/best-dress.png" class="card-img-top" alt="...">
                          <div class="card-body">
                              <div class="card card-best-dress border-0">
                                  <div class="card-body">
@@ -82,7 +82,7 @@
                  <div class="col-lg-4  offset-lg-2 col-12 p-3 offset-lg-2 d-flex align-items-center justify-content-center">
                      <div class="card aurel-card" data-aos="fade-left" data-aos-duration="1000">
                          <h4 class="f-poppins pt-3 pb-2">Aurel</h4>
-                         <img src="images/aurel-img.png" class="m-auto" width="100%" alt="...">
+                         <img src="<?=BASEURL?>/assets/images/aurel-img.png" class="m-auto" width="100%" alt="...">
                          <div class="card-body">
                              <p>Dress is mostly use by women in <br>
                                  special occation, so it should be <br>
@@ -106,7 +106,7 @@
                      <div class="slider owl-carousel">
                          <div class="card">
                              <div class="img">
-                                 <img src="./images/cr-1.png" alt="" class="pb-2">
+                                 <img src="<?=BASEURL?>/assets/images/cr-1.png" alt="" class="pb-2">
                                  <div class="content-cr">
                                      <h1>$.500,00</h1>
                                      <p>Bermuda Dress</p>
@@ -118,7 +118,7 @@
                          </div>
                          <div class="card">
                              <div class="img">
-                                 <img src="./images/cr-1.png" alt="" class="pb-2">
+                                 <img src="<?=BASEURL?>/assets/images/cr-1.png" alt="" class="pb-2">
                                  <div class="content-cr">
                                      <h1>$.100,00</h1>
                                      <p>Bermuda Dress</p>
@@ -139,7 +139,7 @@
              <div class="row">
                  <div class="col-lg-3 col-md-6 mt-3">
                      <div class="card home-shadow-product" style="width: 100%;" data-aos="fade-right" data-aos-duration="1000">
-                         <img src="./images/product.jpg" class="card-img-top" alt="...">
+                         <img src="<?=BASEURL?>/assets/images/product.jpg" class="card-img-top" alt="...">
                          <div class="card-body">
                              <h5 class="card-title">Lisa Tunic</h5>
                              <div class="d-flex justify-content-between">
@@ -153,7 +153,7 @@
 
                  <div class="col-lg-3 col-md-6 mt-3">
                      <div class="card home-shadow-product" style="width: 100%;" data-aos="fade-up-right" data-aos-duration="800">
-                         <img src="./images/product.jpg" class="card-img-top" alt="...">
+                         <img src="<?=BASEURL?>/assets/images/product.jpg" class="card-img-top" alt="...">
                          <div class="card-body">
                              <h5 class="card-title">Cardia Dress</h5>
                              <div class="d-flex justify-content-between">
@@ -167,7 +167,7 @@
 
                  <div class="col-lg-3 col-md-6 mt-3">
                      <div class="card home-shadow-product" style="width: 100%;" data-aos="fade-up-left" data-aos-duration="800">
-                         <img src="./images/product.jpg" class="card-img-top" alt="...">
+                         <img src="<?=BASEURL?>/assets/images/product.jpg" class="card-img-top" alt="...">
                          <div class="card-body">
                              <h5 class="card-title">Coral Jumpsuit</h5>
                              <div class="d-flex justify-content-between">
@@ -181,7 +181,7 @@
 
                  <div class="col-lg-3 col-md-6 mt-3">
                      <div class="card home-shadow-product" style="width: 100%;" data-aos="fade-left" data-aos-duration="1000">
-                         <img src="./images/product.jpg" class="card-img-top" alt="...">
+                         <img src="<?=BASEURL?>/assets/images/product.jpg" class="card-img-top" alt="...">
                          <div class="card-body">
                              <h5 class="card-title">Luna Skirt</h5>
                              <div class="d-flex justify-content-between">

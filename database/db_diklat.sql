@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 03, 2021 at 09:50 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Generation Time: Mar 03, 2021 at 05:04 PM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -84,6 +85,27 @@ INSERT INTO `tb_message` (`id_message`, `name`, `subject`, `email`, `message`, `
 (4, 'a', 'a', 'a@gmail.com', 'a', '0000-00-00 00:00:00'),
 (5, 'a', 'a', 'aa@gmail.com', 'a', '2021-03-03 14:05:14');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_tipe`
+--
+
+CREATE TABLE `tb_tipe` (
+  `id_tipe` int(11) NOT NULL,
+  `tipe` varchar(100) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_tipe`
+--
+
+INSERT INTO `tb_tipe` (`id_tipe`, `tipe`, `created_at`) VALUES
+(1, 'top-product', '2021-03-03 23:44:27'),
+(2, 'featured-product', '2021-03-03 23:44:27'),
+(3, 'none', '2021-03-03 23:44:27');
+
 --
 -- Indexes for dumped tables
 --
@@ -107,6 +129,12 @@ ALTER TABLE `tb_message`
   ADD PRIMARY KEY (`id_message`);
 
 --
+-- Indexes for table `tb_tipe`
+--
+ALTER TABLE `tb_tipe`
+  ADD PRIMARY KEY (`id_tipe`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -120,13 +148,19 @@ ALTER TABLE `tb_auth`
 -- AUTO_INCREMENT for table `tb_kategori`
 --
 ALTER TABLE `tb_kategori`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tb_message`
 --
 ALTER TABLE `tb_message`
   MODIFY `id_message` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `tb_tipe`
+--
+ALTER TABLE `tb_tipe`
+  MODIFY `id_tipe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

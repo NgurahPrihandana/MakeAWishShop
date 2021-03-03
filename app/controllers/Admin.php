@@ -3,7 +3,8 @@
 class Admin extends Controller {
     public function index() {
         $data['set_active'] = "index";
-        $this->view('admin/layouts/header');
+        $data['title'] = "Dashboard";
+        $this->view('admin/layouts/header',$data);
         $this->view('admin/layouts/navbar',$data);
         $this->view('admin/layouts/topnav');
         $this->view('admin/index');
@@ -13,7 +14,8 @@ class Admin extends Controller {
     public function kategori() {
         $data['set_active'] ="kategori";
         $data['kategori'] = $this->model('Kategori_model')->getAllKategori();
-        $this->view('admin/layouts/header');
+        $data['title'] = "Kategori";
+        $this->view('admin/layouts/header', $data);
         $this->view('admin/layouts/navbar',$data);
         $this->view('admin/layouts/topnav');
         $this->view('admin/kategori',$data);
@@ -30,9 +32,20 @@ class Admin extends Controller {
         }
     }
 
+    public function hapus_kategori($id) {
+        if ($this->model("Kategori_model")->hapusKategori($id) > 0) {
+            Flasher::setFlash('success', 'Delete kategori sukses');
+            header('Location: ' . BASEURL . '/admin/kategori');
+        } else {
+            Flasher::setFlash('error', 'Delete kategori gagal');
+            header('Location: ' . BASEURL . '/admin/kategori');
+        }
+    }
+
     public function product() {
         $data['set_active'] = "product";
-        $this->view('admin/layouts/header');
+        $data['title'] = "Product";
+        $this->view('admin/layouts/header', $data);
         $this->view('admin/layouts/navbar', $data);
         $this->view('admin/layouts/topnav');
         $this->view('admin/product');
@@ -42,7 +55,8 @@ class Admin extends Controller {
     public function message() {
         $data['message'] = $this->model("Message_model")->getAllMessage();
         $data['set_active'] = "message";
-        $this->view('admin/layouts/header');
+        $data['title'] = "Message";
+        $this->view('admin/layouts/header', $data);
         $this->view('admin/layouts/navbar', $data);
         $this->view('admin/layouts/topnav');
         $this->view('admin/message',$data);

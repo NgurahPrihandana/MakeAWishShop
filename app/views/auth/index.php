@@ -18,6 +18,7 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == "login") {
   header("Location: " . BASEURL . "/admin/index");
 }
 
+Flasher::flash();
 ?>
  
  <!DOCTYPE html>

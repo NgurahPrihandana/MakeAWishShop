@@ -7,37 +7,37 @@
         </button>
         <div class="collapse navbar-collapse navbar-makeAwish" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                <li class="nav-item nav-link active">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <li class="nav-item nav-link <?= $data['set_active'] == "home" ? "active" : " " ?>">
+                    <a class="nav-link <?= $data['set_active'] == "home" ? "active" : " " ?>" aria-current="page" href="<?=BASEURL?>/home/index">Home</a>
                     <div class="underline-bar"></div>
                 </li>
-                <li class="nav-item nav-link">
-                    <a class="nav-link" href="products.html">Products</a>
+                <li class="nav-item nav-link <?= $data['set_active'] == "product" ? "active" : " " ?>">
+                    <a class="nav-link <?= $data['set_active'] == "product" ? "active" : " " ?>" href="<?=BASEURL?>/product/index">Products</a>
                     <div class="underline-bar"></div>
                 </li>
-                <li class="nav-item nav-link">
-                    <a class="nav-link" href="service.html">Service</a>
+                <li class="nav-item nav-link <?= $data['set_active'] == "service" ? "active" : " " ?>">
+                    <a class="nav-link <?= $data['set_active'] == "service" ? "active" : " " ?>" href="<?=BASEURL?>/service/index">Service</a>
                     <div class="underline-bar"></div>
                 </li>
-                <li class="nav-item nav-link">
-                    <a class="nav-link" href="about-us.html">About Us</a>
+                <li class="nav-item nav-link <?= $data['set_active'] == "about" ? "active" : " " ?>">
+                    <a class="nav-link <?= $data['set_active'] == "about" ? "active" : " " ?>" href="<?=BASEURL?>/about/index">About Us</a>
                     <div class="underline-bar"></div>
                 </li>
-                <li class="nav-item nav-link">
-                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                <li class="nav-item nav-link <?= $data['set_active'] == "message" ? "active" : " " ?>">
+                    <a class="nav-link <?= $data['set_active'] == "message" ? "active" : " " ?>" href="<?=BASEURL?>/message/index">Contact Us</a>
                     <div class="underline-bar"></div>
                 </li>
             </ul>
             <form class="d-flex">
                 <ul class="navbar-nav">
                     <li class="nav-item nav-link">
-                        <a href=""><img src="images/icon/instagram.svg" alt=""></a>
+                        <a href=""><img src="<?=BASEURL?>/assets/images/icon/instagram.svg" alt=""></a>
                     </li>
                     <li class="nav-item nav-link">
-                        <a href=""><img src="images/icon/facebook.svg" alt=""></a>
+                        <a href=""><img src="<?=BASEURL?>/assets/images/icon/facebook.svg" alt=""></a>
                     </li>
                     <li class="nav-item nav-link">
-                        <a href=""><img src="images/icon/twitter.svg" alt=""></a>
+                        <a href=""><img src="<?=BASEURL?>/assets/images/icon/twitter.svg" alt=""></a>
                     </li>
                 </ul>
             </form>

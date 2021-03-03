@@ -12,11 +12,22 @@ class Admin extends Controller {
 
     public function kategori() {
         $data['set_active'] ="kategori";
+        $data['kategori'] = $this->model('Kategori_model')->getAllKategori();
         $this->view('admin/layouts/header');
         $this->view('admin/layouts/navbar',$data);
         $this->view('admin/layouts/topnav');
-        $this->view('admin/kategori');
+        $this->view('admin/kategori',$data);
         $this->view('admin/layouts/footer');
+    }
+
+    public function tambah_kategori() {
+        if($this->model("Kategori_model")->tambahKategori($_POST) > 0) {
+            Flasher::setFlash('success','Tambah kategori berhasil');
+            header('Location: ' . BASEURL . '/admin/kategori');
+        } else {
+            Flasher::setFlash('error','Tambah kategori gagal');
+            header('Location: ' . BASEURL . '/admin/kategori');
+        }
     }
 
     public function product() {
@@ -26,6 +37,36 @@ class Admin extends Controller {
         $this->view('admin/layouts/topnav');
         $this->view('admin/product');
         $this->view('admin/layouts/footer');
+    }
+
+    public function message() {
+        $data['message'] = $this->model("Message_model")->getAllMessage();
+        $data['set_active'] = "message";
+        $this->view('admin/layouts/header');
+        $this->view('admin/layouts/navbar', $data);
+        $this->view('admin/layouts/topnav');
+        $this->view('admin/message',$data);
+        $this->view('admin/layouts/footer');
+    }
+
+    public function hapus_message($id) {
+        if($this->model("Message_model")->hapusMessage($id) > 0) {
+            Flasher::setFlash('success','Delete message sukses');
+            header('Location: ' . BASEURL . '/admin/message');
+        } else {
+            Flasher::setFlash('error','Delete message gagal');
+            header('Location: ' . BASEURL . '/admin/message');
+        }
+    }
+
+    public function tambah_message() {
+        if($this->model("Message_model")->tambahMessage($_POST) > 0) {
+            Flasher::setFlash('success','Succesfully send message');
+            header('Location: ' . BASEURL . '/message/index');
+        } else {
+            Flasher::setFlash('error','Failed to send message, please try again later');
+            header('Location: ' . BASEURL . '/message/index');
+        }
     }
 }
 

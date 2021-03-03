@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/css/style_cr.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/css/style_ts.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/assets/css/season-card.css" />
+    <link rel="stylesheet" href="<?= BASEURL; ?>/assets/css/css-card-oke.css" />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Quicksand&display=swap" rel="stylesheet">
@@ -22,6 +24,8 @@
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- jquery -->
     <title><?= $data["title"]; ?></title>
 </head>
 

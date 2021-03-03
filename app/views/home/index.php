@@ -262,3 +262,13 @@
 
              </div>
          </section>
+     </div>
+
+     <script>
+          $(".slider").owlCarousel({
+         loop: false,
+         autoplay: false,
+         autoplayTimeout: 2000, //2000ms = 2s;
+         autoplayHoverPause: true,
+     });
+     </script>

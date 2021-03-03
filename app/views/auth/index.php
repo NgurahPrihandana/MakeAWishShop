@@ -11,6 +11,15 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  -->
+
+ <?php 
+
+if (isset($_SESSION['status']) && $_SESSION['status'] == "login") {
+  header("Location: " . BASEURL . "/admin/index");
+}
+
+?>
+ 
  <!DOCTYPE html>
 <html>
 
@@ -77,12 +86,6 @@
                     </div>
                     <input class="form-control" placeholder="Password" type="password" name="password">
                   </div>
-                </div>
-                <div class="custom-control custom-control-alternative custom-checkbox">
-                  <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                  <label class="custom-control-label" for=" customCheckLogin">
-                    <span class="text-muted">Remember me</span>
-                  </label>
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary my-4" name="login">Sign in</button>

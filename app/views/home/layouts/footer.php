@@ -1,4 +1,5 @@
  <!-- footer -->
+<div class="container">
  <footer class="footer mt-4 f-poppins">
      <div class="footer__addr">
          <h1 class="footer__logo">Make A Wish</h1>
@@ -72,18 +73,12 @@
  <!-- end-footer -->
  </div>
 
+ 
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
  <script>
      AOS.init();
-     $(".slider").owlCarousel({
-         loop: false,
-         autoplay: false,
-         autoplayTimeout: 2000, //2000ms = 2s;
-         autoplayHoverPause: true,
-     });
  </script>
-
 
 
 

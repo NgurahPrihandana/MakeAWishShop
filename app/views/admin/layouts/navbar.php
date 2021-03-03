@@ -41,7 +41,7 @@
                          </a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="<?= BASEURL; ?>/admin/message">
+                         <a class="nav-link <?= $data['set_active'] == "message" ? "active" : " " ?>" href="<?= BASEURL; ?>/admin/message">
                              <i class="ni ni-calendar-grid-58 text-red"></i>
                              <span class="nav-link-text">Message</span>
                          </a>

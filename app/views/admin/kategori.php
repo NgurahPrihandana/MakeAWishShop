@@ -1,3 +1,4 @@
+  <?php Flasher::?>
    <!-- Header -->
    <div class="header pb-6">
      <div class="container-fluid">
@@ -14,8 +15,6 @@
              </nav>
            </div>
            <div class="col-lg-6 col-5 text-right">
-             <a href="#" class="btn btn-sm btn-neutral">New</a>
-             <a href="#" class="btn btn-sm btn-neutral">Filters</a>
            </div>
          </div>
        </div>
@@ -34,6 +33,8 @@
            <div class="table-responsive py-4">
              <table class="table table-flush" id="datatable-basic">
                <thead class="thead-light">
+               <?php foreach ($data['kategori'] as $index => $value) : ?>
+               <?php $i = 1 ?>
                  <tr>
                    <th>No</th>
                    <th>Kategori</th>
@@ -51,11 +52,20 @@
                </tfoot>
                <tbody>
                  <tr>
-                   <td>1</td>
-                   <td>1</td>
-                   <td>1</td>
-                   <td>1</td>
+                   <td><?=$i?></td>
+                   <td><?=$value['kategori']?></td>
+                   <td><?=$value['icon_kategori']?></td>
+                   <td>
+                   <a href="<?= BASEURL ?>/home/edit_pengiriman" class="btn btn-facebook text-white btn-icon-only btn-sm">
+                        <span class="btn-inner--icon"><i class="fas fa-edit"></i></span>
+                      </a>
+                      <a href="<?= BASEURL ?>/home/hapus_pengiriman" class="btn btn-pinterest text-white btn-icon-only btn-sm">
+                        <span class="btn-inner--icon"><i class="fas fa-trash"></i></span>
+                      </a>
+                   </td>
                  </tr>
+                 <?php $i++?>
+                 <?php endforeach;?>
                </tbody>
              </table>
            </div>
@@ -65,11 +75,11 @@
 
      <!-- Modal -->
      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-       <form action="<?= BASEURL ?>/home/tambah_pengiriman" method="POST">
+       <form action="<?= BASEURL ?>/admin/tambah_kategori" method="POST" enctype="multipart/form-data">
          <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg" role="document">
            <div class="modal-content">
              <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLongTitle">Tambah Pengiriman</h5>
+               <h5 class="modal-title" id="exampleModalLongTitle">Tambah Kategori</h5>
                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                  <span aria-hidden="true">&times;</span>
                </button>
@@ -79,12 +89,12 @@
                  <!-- Card body -->
                  <div class="card-body">
                    <div class="form-group">
-                     <label class="form-control-label" for="exampleFormControlInput1">Kode Pengiriman</label>
-                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Input kode pengiriman..." name="kode_pengiriman">
+                     <label class="form-control-label" for="exampleFormControlInput1">Kategori</label>
+                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Input kategori..." name="kategori">
                    </div>
                    <div class="form-group">
                      <label class="form-control-label" for="exampleFormControlInput1">Icon Kategori</label>
-                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Input kode pengiriman..." name="kode_pengiriman">
+                     <input type="file" class="form-control" id="exampleFormControlInput1" name="icon_kategori">
                    </div>
                  </div>
                </div>

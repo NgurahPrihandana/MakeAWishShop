@@ -49,12 +49,12 @@
                 </tr>
               </tfoot>
               <tbody>
-                <?php foreach ($data['kategori'] as $index => $value) : ?>
                   <?php $i = 1 ?>
+                <?php foreach ($data['kategori'] as $index => $value) : ?>
                   <tr>
                     <td><?= $i ?></td>
                     <td><?= $value['kategori'] ?></td>
-                    <td><?= $value['icon_kategori'] ?></td>
+                    <td><img src="<?=BASEURL;?>/assets/images/icon/<?= $value['icon_kategori'] ?>" width="50px" alt=""></td>
                     <td>
                       <a href="<?= BASEURL ?>/admin/edit_kategori/<?= $value['id_kategori']; ?>" class="btn btn-facebook text-white btn-icon-only btn-sm">
                         <span class="btn-inner--icon"><i class="fas fa-edit"></i></span>

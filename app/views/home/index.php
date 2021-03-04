@@ -59,7 +59,7 @@
      <div class="container">
          <!-- top-product -->
          <section class="top-product mt-5 text-center">
-             <h1 class="f-poppins">Top Products</h1>
+             <h1 class="f-poppins">What Our Designer Say</h1>
              <div class="row mt-5">
                  <!--card-best-dress-->
                  <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
@@ -81,7 +81,7 @@
                  <!-- end-card-best-dress -->
                  <div class="col-lg-4  offset-lg-2 col-12 p-3 offset-lg-2 d-flex align-items-center justify-content-center">
                      <div class="card aurel-card" data-aos="fade-left" data-aos-duration="1000">
-                         <h4 class="f-poppins pt-3 pb-2">Aurel</h4>
+                         <h4 class="f-poppins pt-3 pb-2">Andrea</h4>
                          <img src="<?=BASEURL?>/assets/images/aurel-img.png" class="m-auto" width="100%" alt="...">
                          <div class="card-body">
                              <p>Dress is mostly use by women in <br>
@@ -192,15 +192,6 @@
                          </div>
                      </div>
                  </div>
-             </div>
-
-             <div class="text-center d-flex justify-content-center mt-4 mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-                 <a href="products.html" class="btn-detail-product btn-1-detail-product">
-                     <svg>
-                         <rect x="0" y="0" fill="none" width="100%" height="100%" />
-                     </svg>
-                     See More
-                 </a>
              </div>
          </section>
          <!-- end-deals-of-the-month -->

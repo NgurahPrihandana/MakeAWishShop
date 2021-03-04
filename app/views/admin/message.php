@@ -54,8 +54,8 @@
                                </tr>
                            </tfoot>
                            <tbody>
-                               <?php foreach ($data['message'] as $index => $value) : ?>
                                    <?php $i = 1 ?>
+                               <?php foreach ($data['message'] as $index => $value) : ?>
                                    <tr>
                                        <td><?= $i ?></td>
                                        <td><?= $value['name'] ?></td>

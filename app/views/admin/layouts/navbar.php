@@ -46,6 +46,12 @@
                              <span class="nav-link-text">Message</span>
                          </a>
                      </li>
+                     <li class="nav-item">
+                         <a class="nav-link <?= $data['set_active'] == "review" ? "active" : " " ?>" href="<?= BASEURL; ?>/admin/review">
+                             <i class="ni ni-calendar-grid-58 text-red"></i>
+                             <span class="nav-link-text">Review</span>
+                         </a>
+                     </li>
                  </ul>
              </div>
          </div>

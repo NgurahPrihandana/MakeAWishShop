@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 03, 2021 at 05:04 PM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Generation Time: Mar 04, 2021 at 09:55 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -60,7 +59,11 @@ CREATE TABLE `tb_kategori` (
 --
 
 INSERT INTO `tb_kategori` (`id_kategori`, `kategori`, `icon_kategori`) VALUES
-(1, 'dress', 'dress-icon');
+(1, 'Dress', 'dress.png'),
+(4, 'Shorts', 'shorts.png'),
+(5, 'Skirt', 'skirt.png'),
+(6, 'T-Shirt', 't-shirt.png'),
+(7, 'Accesoriess', 'accesories.png');
 
 -- --------------------------------------------------------
 
@@ -88,6 +91,43 @@ INSERT INTO `tb_message` (`id_message`, `name`, `subject`, `email`, `message`, `
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tb_product`
+--
+
+CREATE TABLE `tb_product` (
+  `id_product` int(11) NOT NULL,
+  `nama_product` varchar(150) NOT NULL,
+  `id_kategori` int(11) NOT NULL,
+  `id_tipe` int(11) NOT NULL,
+  `harga_product` int(11) NOT NULL,
+  `gambar_product` varchar(150) NOT NULL,
+  `deskripsi_product` text NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_product`
+--
+
+INSERT INTO `tb_product` (`id_product`, `nama_product`, `id_kategori`, `id_tipe`, `harga_product`, `gambar_product`, `deskripsi_product`, `created_at`) VALUES
+(13, 'Lisa Skirt', 5, 1, 150000, 'product.jpg', '11', '2021-03-04 15:31:20');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_review`
+--
+
+CREATE TABLE `tb_review` (
+  `id_review` int(11) NOT NULL,
+  `name` varchar(150) NOT NULL,
+  `review` text NOT NULL,
+  `img_profile` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tb_tipe`
 --
 
@@ -102,8 +142,8 @@ CREATE TABLE `tb_tipe` (
 --
 
 INSERT INTO `tb_tipe` (`id_tipe`, `tipe`, `created_at`) VALUES
-(1, 'top-product', '2021-03-03 23:44:27'),
-(2, 'featured-product', '2021-03-03 23:44:27'),
+(1, 'Top Product', '2021-03-03 23:44:27'),
+(2, 'Featured Product', '2021-03-03 23:44:27'),
 (3, 'none', '2021-03-03 23:44:27');
 
 --
@@ -129,6 +169,18 @@ ALTER TABLE `tb_message`
   ADD PRIMARY KEY (`id_message`);
 
 --
+-- Indexes for table `tb_product`
+--
+ALTER TABLE `tb_product`
+  ADD PRIMARY KEY (`id_product`);
+
+--
+-- Indexes for table `tb_review`
+--
+ALTER TABLE `tb_review`
+  ADD PRIMARY KEY (`id_review`);
+
+--
 -- Indexes for table `tb_tipe`
 --
 ALTER TABLE `tb_tipe`
@@ -148,13 +200,25 @@ ALTER TABLE `tb_auth`
 -- AUTO_INCREMENT for table `tb_kategori`
 --
 ALTER TABLE `tb_kategori`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tb_message`
 --
 ALTER TABLE `tb_message`
   MODIFY `id_message` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `tb_product`
+--
+ALTER TABLE `tb_product`
+  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `tb_review`
+--
+ALTER TABLE `tb_review`
+  MODIFY `id_review` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tb_tipe`

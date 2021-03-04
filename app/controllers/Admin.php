@@ -154,6 +154,7 @@ class Admin extends Controller {
     public function review() {
         $data['set_active'] = "review";
         $data['title'] = "Review";
+        $data['review'] = $this->model('Review_model')->getAllReview();
         $this->view('admin/layouts/header', $data);
         $this->view('admin/layouts/navbar', $data);
         $this->view('admin/layouts/topnav');

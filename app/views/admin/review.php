@@ -50,10 +50,12 @@
                             </tr>
                         </tfoot>
                         <tbody>
+                        <?php $i = 1 ?>
+                        <?php foreach($data['review'] as $r) : ?>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><?= $i; ?></td>
+                                <td><?= $r['name']; ?></td>
+                                <td><?= substr($r['review'],0,50); ?>...</td>
                                 <td></td>
                                 <td>
                                     <a href="<?= BASEURL ?>/admin/hapus_message/<?= $value['id_message'] ?>" class="btn btn-pinterest text-white btn-icon-only btn-sm">
@@ -61,6 +63,8 @@
                                     </a>
                                 </td>
                             </tr>
+                            <?php $i++ ?>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>

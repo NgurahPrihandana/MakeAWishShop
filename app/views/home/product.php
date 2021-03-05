@@ -54,8 +54,8 @@
     <div class="row f-poppins">
     <?php foreach($data['product'] as $p) :?>
       <div class="col-lg-3 col-md-6 mt-3">
-        <div class="card home-shadow-product h-100" data-aos="flip-right">
-          <img src="<?= BASEURL ?>/assets/images/product/<?=$p['gambar_product']?>" class="card-img-top" alt="..." />
+        <div class="card home-shadow-product" data-aos="flip-right">
+          <img src="<?= BASEURL ?>/assets/images/product/<?=$p['gambar_product']?>" class="card-img-top card-product" alt="..." />
           <div class="card-body">
             <h5 class="card-title"><?=$p['nama_product']?></h5>
             <div class="d-flex justify-content-between">

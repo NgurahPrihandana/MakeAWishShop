@@ -68,16 +68,16 @@
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .spring-card:before {
-  background-image: url(../images/spring-img.png);
+  background-image: url(../images/mass-production.jpg);
 }
 .summer-card:before {
-  background-image: url(../images/summer-img.png);
+  background-image: url(../images/sampling.jpg);
 }
 .fall-card:before {
-  background-image: url(../images/fall-img.png);
+  background-image: url(../images/partnership.jpg);
 }
 .winter-card:before {
-  background-image: url(../images/winter-img.png);
+  background-image: url(../images/consultant.jpg);
 }
 
 .content {

@@ -68,14 +68,14 @@
                                     <td><?= $p['tipe'] ?></td>
                                     <td><?= $p['size'] ?></td>
                                     <td><?= $p['harga_product'] ?></td>
-                                    <td><img src="<?=BASEURL;?>/assets/images/product/<?= $p['gambar_product'] ?>" width="50px" alt=""></td>
-                                    <td><?= substr($p['deskripsi_product'],0,50)?></td>
+                                    <td><img src="<?= BASEURL; ?>/assets/images/product/<?= $p['gambar_product'] ?>" width="50px" alt=""></td>
+                                    <td><?= substr($p['deskripsi_product'], 0, 50) ?></td>
                                     <td>
-                                        <a href="<?= BASEURL ?>/admin/edit_product/<?= $p['id_product']; ?>" class="btn btn-facebook text-white btn-icon-only btn-sm">
-                                            <span class="btn-inner--icon"><i class="fas fa-edit"></i></span>
+                                        <a href="<?= BASEURL ?>/admin/edit_product/<?= $p['id_product']; ?>" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+                                            <i class="fas fa-user-edit"></i>
                                         </a>
-                                        <a href="<?= BASEURL ?>/admin/hapus_product/<?= $p['id_product']; ?>" class="btn btn-pinterest text-white btn-icon-only btn-sm">
-                                            <span class="btn-inner--icon"><i class="fas fa-trash"></i></span>
+                                        <a href="<?= BASEURL ?>/admin/hapus_product/<?= $p['id_product']; ?>" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+                                            <i class="fas fa-trash"></i>
                                         </a>
                                     </td>
                                 </tr>

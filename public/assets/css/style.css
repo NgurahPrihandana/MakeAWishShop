@@ -3,7 +3,12 @@ body, html {
 	font-family: Quicksand, Arial, helvetica, sans-serif;
 	overflow-x: hidden;
 }
-
+.card{
+	height: 370px;
+}
+.card-product{
+	height: 100%;
+}
 /* nav {
 	border-bottom: 1px solid #F79489;
 } */
@@ -62,7 +67,7 @@ body, html {
 }
 
 .banner {
-	height: 92vh;
+	height: auto;
 }
 
 .banner {
@@ -128,11 +133,6 @@ body, html {
 	font-size: 2rem;
 	font-variant: medium;
 }
-
-.deals-of-the-month {
-	height: 30vh;
-}
-
 
 .customer-review article {
 	margin-left: 0;
@@ -714,6 +714,7 @@ border-radius: 15px;
 	.margin-season-card-responsive {
 		margin-bottom: 1.4rem;
 	}
+	
 }
   
   @media screen and (min-width: 24.375em) {
@@ -767,6 +768,11 @@ border-radius: 15px;
 }
 
 /* end-responsive-home */
+@media only screen and (max-width: 768px) {
+		.about-us-column-reverse {
+		flex-direction: column-reverse;
+	}
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -778,7 +784,7 @@ border-radius: 15px;
 		background-attachment: fixed; */
 	}
 
-	.about-us-column-reverse {
+.about-us-column-reverse {
 		flex-direction: column-reverse;
 	}
 

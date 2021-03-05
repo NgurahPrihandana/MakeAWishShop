@@ -50,20 +50,20 @@
                             </tr>
                         </tfoot>
                         <tbody>
-                        <?php $i = 1 ?>
-                        <?php foreach($data['review'] as $r) : ?>
-                            <tr>
-                                <td><?= $i; ?></td>
-                                <td><?= $r['name']; ?></td>
-                                <td><?= substr($r['review'],0,50); ?>...</td>
-                                <td><?=$r['img_profile']?></td>
-                                <td>
-                                <a href="<?= BASEURL ?>/admin/edit_review/<?= $r['id_review']; ?>" class="btn btn-facebook text-white btn-icon-only btn-sm">
-                                            <span class="btn-inner--icon"><i class="fas fa-edit"></i></span>
+                            <?php $i = 1 ?>
+                            <?php foreach ($data['review'] as $r) : ?>
+                                <tr>
+                                    <td><?= $i; ?></td>
+                                    <td><?= $r['name']; ?></td>
+                                    <td><?= substr($r['review'], 0, 50); ?>...</td>
+                                    <td><?= $r['img_profile'] ?></td>
+                                    <td>
+                                        <a href="<?= BASEURL ?>/admin/edit_review/<?= $r['id_review']; ?>" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+                                            <i class="fas fa-user-edit"></i>
                                         </a>
-                                </td>
-                            </tr>
-                            <?php $i++ ?>
+                                    </td>
+                                </tr>
+                                <?php $i++ ?>
                             <?php endforeach; ?>
                         </tbody>
                     </table>

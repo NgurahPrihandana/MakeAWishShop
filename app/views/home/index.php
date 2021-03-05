@@ -55,7 +55,6 @@
          </div>
      </section>
      <!-- end-banner -->
-
      <div class="container">
          <!-- top-product -->
          <section class="top-product mt-4 text-center" id="designer">
@@ -92,11 +91,12 @@
                  </div>
              </div>
          </section>
+     </div>
          <!-- end-top-product -->
 
          <!-- deals-of-the-month -->
          <section class="deals-of-the-month bg-pink-secondary" data-aos="fade-up" data-aos-duration="900">
-             <div class="row">
+             <div class="row py-5">
                  <div class="col-md-4 deals-of-the-month d-flex flex-column justify-content-center align-items-center">
                      <h3 class="f-poppins">Featured Products</h3>
                      <p class="f-quicksand">13 Featured Products</p>
@@ -195,7 +195,7 @@
              </div>
          </section> -->
          <!-- end-deals-of-the-month -->
-
+        <div class="container">
          <section class="container customer-review mt-5">
              <h1 class="text-center pt-4 f-poppins">Customer Review</h1>
              <div class="row">

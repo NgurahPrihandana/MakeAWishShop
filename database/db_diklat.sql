@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 04, 2021 at 09:55 AM
+-- Generation Time: Mar 05, 2021 at 09:57 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -99,6 +99,7 @@ CREATE TABLE `tb_product` (
   `nama_product` varchar(150) NOT NULL,
   `id_kategori` int(11) NOT NULL,
   `id_tipe` int(11) NOT NULL,
+  `size` varchar(50) NOT NULL,
   `harga_product` int(11) NOT NULL,
   `gambar_product` varchar(150) NOT NULL,
   `deskripsi_product` text NOT NULL,
@@ -109,8 +110,9 @@ CREATE TABLE `tb_product` (
 -- Dumping data for table `tb_product`
 --
 
-INSERT INTO `tb_product` (`id_product`, `nama_product`, `id_kategori`, `id_tipe`, `harga_product`, `gambar_product`, `deskripsi_product`, `created_at`) VALUES
-(13, 'Lisa Skirt', 5, 1, 150000, 'product.jpg', '11', '2021-03-04 15:31:20');
+INSERT INTO `tb_product` (`id_product`, `nama_product`, `id_kategori`, `id_tipe`, `size`, `harga_product`, `gambar_product`, `deskripsi_product`, `created_at`) VALUES
+(13, 'Lisa Skirt', 5, 1, 'M', 275, 'detail-product.png', 'The dress covers her shoulders halfway and\r\n            flows down into a stylish draped neckline. It\'s a loose fit which\r\n            makes the dress look comfortable, yet elegant and stylish. Her arms\r\n            are only covered at her shoulders. Which is a good thing too, her\r\n            silky skin isn\'t something you want to cover up. <br /><br />\r\n\r\n            The dress\' waist is narrow, but it\'s a slim fit. A cloth ribbon has\r\n            been wrapped around her and is tied on one side. Below the waist the\r\n            dress fits snug around her and has an accordion style. The dress\r\n            reaches to just above her knees and is longer at the sides and back\r\n            of the dress. <br /><br />\r\n\r\n            She\'s wearing platforms, an ideal match for this dress. To top it\r\n            all off she\'s wearing a small, elegant hat and several lavish\r\n            bracelets.', '2021-03-04 15:31:20'),
+(14, 'Dalia T-Shirt', 6, 2, 'L', 200, 'aurel.png', 'The dress covers her shoulders halfway and\r\n            flows down into a stylish draped neckline. It\'s a loose fit which\r\n            makes the dress look comfortable, yet elegant and stylish. Her arms\r\n            are only covered at her shoulders. Which is a good thing too, her\r\n            silky skin isn\'t something you want to cover up. <br /><br />\r\n\r\n            The dress\' waist is narrow, but it\'s a slim fit. A cloth ribbon has\r\n            been wrapped around her and is tied on one side. Below the waist the\r\n            dress fits snug around her and has an accordion style. The dress\r\n            reaches to just above her knees and is longer at the sides and back\r\n            of the dress. <br /><br />\r\n\r\n            She\'s wearing platforms, an ideal match for this dress. To top it\r\n            all off she\'s wearing a small, elegant hat and several lavish\r\n            bracelets.', '2021-03-05 11:15:55');
 
 -- --------------------------------------------------------
 
@@ -124,6 +126,15 @@ CREATE TABLE `tb_review` (
   `review` text NOT NULL,
   `img_profile` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_review`
+--
+
+INSERT INTO `tb_review` (`id_review`, `name`, `review`, `img_profile`) VALUES
+(1, 'Abdul', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?', 'founder-1.png'),
+(2, 'Wahyu', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?', 'founder-2.png'),
+(3, 'Gana', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?', 'founder-1.png');
 
 -- --------------------------------------------------------
 
@@ -212,13 +223,13 @@ ALTER TABLE `tb_message`
 -- AUTO_INCREMENT for table `tb_product`
 --
 ALTER TABLE `tb_product`
-  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `tb_review`
 --
 ALTER TABLE `tb_review`
-  MODIFY `id_review` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_review` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tb_tipe`

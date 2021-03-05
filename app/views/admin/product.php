@@ -38,6 +38,7 @@
                                 <th>Nama Product</th>
                                 <th>Kategori Product</th>
                                 <th>Tipe Product</th>
+                                <th>Size Product</th>
                                 <th>Harga Product</th>
                                 <th>Gambar Product</th>
                                 <th>Deskripsi Product</th>
@@ -50,6 +51,7 @@
                                 <th>Nama Product</th>
                                 <th>Kategori Product</th>
                                 <th>Tipe Product</th>
+                                <th>Size Product</th>
                                 <th>Harga Product</th>
                                 <th>Gambar Product</th>
                                 <th>Deskripsi Product</th>
@@ -64,6 +66,7 @@
                                     <td><?= $p['nama_product'] ?></td>
                                     <td><?= $p['kategori'] ?></td>
                                     <td><?= $p['tipe'] ?></td>
+                                    <td><?= $p['size'] ?></td>
                                     <td><?= $p['harga_product'] ?></td>
                                     <td><img src="<?=BASEURL;?>/assets/images/product/<?= $p['gambar_product'] ?>" width="50px" alt=""></td>
                                     <td><?= substr($p['deskripsi_product'],0,50)?></td>
@@ -117,7 +120,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label" for="exampleFormControlInput1">Tipe Product</label>
                                             <select class="form-control" id="exampleFormControlSelect1" name="id_tipe">
@@ -126,6 +129,12 @@
                                                     <option value="<?= $t['id_tipe'] ?>"><?= $t['tipe'] ?></option>
                                                 <?php endforeach; ?>
                                             </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="exampleFormControlInput1">Size</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Input size product..." name="size">
                                         </div>
                                     </div>
                                 </div>

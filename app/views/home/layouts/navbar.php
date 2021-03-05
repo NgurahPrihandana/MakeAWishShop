@@ -1,5 +1,5 @@
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light" style="position: fixed; top:0; left:0; width: 100%; z-index: 99; background: white;">
     <div class="container">
         <a class="navbar-brand" href="#">Make A Wish</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,5 +1,5 @@
 <!-- container -->
-<div class="container">
+<div class="container" style="margin-top: 5rem;">
   <!-- banner-product -->
   <section class="product-banner d-flex align-items-center justify-content-center">
     <h1 class="f-poppins text-white">PRODUCT</h1>
@@ -14,7 +14,7 @@
 
   <!-- category -->
   <section class="category">
-    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
     <div class="col">
         <a href="" style="text-decoration: none;">
           <div class="card h-100 active" data-aos="zoom-in" data-aos-delay="100">
@@ -27,8 +27,8 @@
       </div>
     <?php foreach($data['kategori'] as $k) :?>
       <div class="col">
-        <a href="" style="text-decoration: none;">
-          <div class="card h-100 active" data-aos="zoom-in" data-aos-delay="100">
+        <a href="<?=BASEURL?>/product/categories/<?=$k['id_kategori']?>" style="text-decoration: none;">
+          <div class="card h-100" data-aos="zoom-in" data-aos-delay="100">
             <img src="<?= BASEURL ?>/assets/images/icon/<?=$k['icon_kategori']?>" class=" m-auto mt-4" width="30%" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center f-poppins"><?=$k['kategori']?></h5>
@@ -42,11 +42,11 @@
   </section>
 
   <!-- search -->
-  <div class="search mt-5">
+  <!-- <div class="search mt-5">
     <form action="" class="text-center form d-flex justify-content-center">
       <input class="w-50 form-control" type="text" placeholder="Search Here..."/>
     </form>
-  </div>
+  </div> -->
   <!-- end-search -->
 
   <!-- product -->
@@ -55,13 +55,13 @@
     <?php foreach($data['product'] as $p) :?>
       <div class="col-lg-3 col-md-6 mt-3">
         <div class="card home-shadow-product h-100" data-aos="flip-right">
-          <img src="<?= BASEURL ?>/assets/images/product.jpg" class="card-img-top" alt="..." />
+          <img src="<?= BASEURL ?>/assets/images/product/<?=$p['gambar_product']?>" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title"><?=$p['nama_product']?></h5>
             <div class="d-flex justify-content-between">
               <div class="price">$<?=$p['harga_product']?></div>
               <div class=""></div>
-              <a href="detail-product.html" class="btn btn-pink">See Detail</a>
+              <a href="<?=BASEURL?>/product/detail_product/<?=$p['id_product']?>" class="btn btn-pink">See Detail</a>
             </div>
           </div>
         </div>
@@ -71,10 +71,11 @@
 
 
   </section>
+  <br><br><br><br><br>
   <!-- end-prduct -->
 
   <!-- season -->
-  <section class="product-season">
+  <!-- <section class="product-season">
     <h1 class="text-center mt-5 text-bold">Season</h1>
     <div class="row mt-4">
       <div class="col-md-6">
@@ -151,7 +152,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- end-season -->
 
   <!-- category -->

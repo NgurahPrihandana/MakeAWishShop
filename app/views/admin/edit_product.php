@@ -51,7 +51,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label" for="exampleFormControlInput1">Tipe Product</label>
                                             <select class="form-control" id="exampleFormControlSelect1" name="id_tipe">
@@ -60,6 +60,12 @@
                                                     <option <?= $t['id_tipe'] == $data['spcProduct']['id_tipe'] ? "selected" : ""?> value="<?= $t['id_tipe'] ?>"><?= $t['tipe'] ?></option>
                                                 <?php endforeach; ?>
                                             </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="exampleFormControlInput1">Size Product</label>
+                                            <input type="text" value="<?=$data['spcProduct']['size']?>" class="form-control" id="exampleFormControlInput1" placeholder="Input size product..." name="size">
                                         </div>
                                     </div>
                                 </div>

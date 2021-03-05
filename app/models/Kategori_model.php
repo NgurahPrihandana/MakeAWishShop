@@ -92,7 +92,7 @@ class Kategori_model
                     Flasher::setFlash('error', "Sorry, there was an error where we uploaded your file");
                 }
             }
-            $spcKategori = $this->getSpcKategori($data);
+            $spcKategori = $this->getSpcKategori($data['id_kategori']);
             $gambar = $spcKategori['icon_kategori'];
             unlink(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "public" . DIRECTORY_SEPARATOR . "assets" . DIRECTORY_SEPARATOR . "images" . DIRECTORY_SEPARATOR . "icon" . DIRECTORY_SEPARATOR . $gambar);
             $query = "UPDATE $this->table 

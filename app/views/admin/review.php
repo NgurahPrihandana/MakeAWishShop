@@ -56,11 +56,11 @@
                                 <td><?= $i; ?></td>
                                 <td><?= $r['name']; ?></td>
                                 <td><?= substr($r['review'],0,50); ?>...</td>
-                                <td></td>
+                                <td><?=$r['img_profile']?></td>
                                 <td>
-                                    <a href="<?= BASEURL ?>/admin/hapus_message/<?= $value['id_message'] ?>" class="btn btn-pinterest text-white btn-icon-only btn-sm">
-                                        <span class="btn-inner--icon"><i class="fas fa-trash"></i></span>
-                                    </a>
+                                <a href="<?= BASEURL ?>/admin/edit_review/<?= $r['id_review']; ?>" class="btn btn-facebook text-white btn-icon-only btn-sm">
+                                            <span class="btn-inner--icon"><i class="fas fa-edit"></i></span>
+                                        </a>
                                 </td>
                             </tr>
                             <?php $i++ ?>

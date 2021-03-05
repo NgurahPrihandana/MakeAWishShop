@@ -17,8 +17,8 @@ article {
   }
   article figure {
     /* limit the width and height of the figure to show the image in a circle */
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     /* specify negative margin matching half the height of the element */
     margin-top: -60px;

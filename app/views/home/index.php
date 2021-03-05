@@ -1,5 +1,5 @@
      <!-- banner -->
-     <section class="banner mt-1">
+     <section class="banner mt-1" style="margin-top: 5rem;">
          <div class="container">
              <div class="row">
                  <div class="col-lg-8 col-sm-12 d-flex flex-column align-items-center justify-content-center f-poppins">
@@ -9,9 +9,9 @@
                              <h2 class="text-center">High Quality Product <br> & <br>Highly Experienced Worker</h2>
                          </div>
                          <div class="text-center">
-                             <button class="btn btn-pink mt-2 text-white f-poppins">
+                             <a href="#designer" class="btn btn-pink mt-2 text-white f-poppins">
                                  Explore Now
-                             </button>
+                             </a>
                          </div>
                      </div>
                      <!-- card -->
@@ -58,9 +58,9 @@
 
      <div class="container">
          <!-- top-product -->
-         <section class="top-product mt-5 text-center">
+         <section class="top-product mt-4 text-center" id="designer">
              <h1 class="f-poppins">What Our Designer Say</h1>
-             <div class="row mt-5">
+             <div class="row mt-2">
                  <!--card-best-dress-->
                  <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
                      <div class="card border-0 card-best-dress-container" data-aos="fade-right" data-aos-duration="1000">
@@ -70,9 +70,9 @@
                                  <div class="card-body">
                                      <h5 class="card-title f-poppins">PICK YOUR BEST DRESS</h5>
                                      <p class="card-text f-quicksand">Lisa Dress is the best choice <br>to pick in Februari.</p>
-                                     <button class="btn btn-pink mt-2 text-white f-poppins">
-                                         Explore Now
-                                     </button>
+                                     <a href="<?=BASEURL?>/product/index" class="btn btn-pink mt-2 text-white f-poppins">
+                                         See Product
+                                     </a>
                                  </div>
                              </div>
                          </div>
@@ -81,7 +81,7 @@
                  <!-- end-card-best-dress -->
                  <div class="col-lg-4  offset-lg-2 col-12 p-3 offset-lg-2 d-flex align-items-center justify-content-center">
                      <div class="card aurel-card" data-aos="fade-left" data-aos-duration="1000">
-                         <h4 class="f-poppins pt-3 pb-2">Andrea</h4>
+                         <!-- <h4 class="f-poppins pt-3 pb-2">Andrea</h4> -->
                          <img src="<?=BASEURL?>/assets/images/aurel-img.png" class="m-auto" width="100%" alt="...">
                          <div class="card-body">
                              <p>Dress is mostly use by women in <br>
@@ -95,11 +95,11 @@
          <!-- end-top-product -->
 
          <!-- deals-of-the-month -->
-         <section class="deals-of-the-month bg-pink-secondary mt-5" data-aos="fade-up" data-aos-duration="900">
+         <section class="deals-of-the-month bg-pink-secondary" data-aos="fade-up" data-aos-duration="900">
              <div class="row">
                  <div class="col-md-4 deals-of-the-month d-flex flex-column justify-content-center align-items-center">
                      <h3 class="f-poppins">Featured Products</h3>
-                     <p class="f-quicksand">13 Brand have partnered with us</p>
+                     <p class="f-quicksand">13 Featured Products</p>
                  </div>
                  <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
                      <!-- caraousel -->
@@ -135,7 +135,7 @@
 
          </section>
 
-         <section class="list-product container mt-5">
+         <!-- <section class="list-product container mt-5">
              <div class="row">
                  <div class="col-lg-3 col-md-6 mt-3">
                      <div class="card home-shadow-product" style="width: 100%;" data-aos="fade-right" data-aos-duration="1000">
@@ -193,67 +193,41 @@
                      </div>
                  </div>
              </div>
-         </section>
+         </section> -->
          <!-- end-deals-of-the-month -->
 
          <section class="container customer-review mt-5">
              <h1 class="text-center pt-4 f-poppins">Customer Review</h1>
              <div class="row">
-                 <div class="col-lg-4 text-center" data-aos="fade-right" data-aos-duration="800">
+             <?php foreach($data['review'] as $index => $r) :?>
+                 <div class="col-lg-4 text-center" <?=$index == 0 ? 'data-aos="fade-right"' : ''?>
+                 <?=$index == 1 ? 'data-aos="fade-up"' : ''?> 
+                 <?=$index == 2 ? 'data-aos="fade-left"' : ''?>
+                    data-aos-duration="800"
+                 
+                 >
                      <article>
                          <figure>
-                             <img alt="A rather marvellous macaw, opening one of its wings to support the cause." src="https://images.pexels.com/photos/2317904/pexels-photo-2317904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                             <img src="<?=BASEURL?>/assets/images/review/<?=$r['img_profile']?>"/>
                          </figure>
 
                          <div>
                              <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?
+                                 <?=$r['review']?>
                              </p>
                              <h1>
-                                 Marvellous Macaw
+                                 <?=$r['name']?>
                              </h1>
                          </div>
                      </article>
                  </div>
-
-                 <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800">
-                     <article>
-                         <figure>
-                             <img alt="A rather marvellous macaw, opening one of its wings to support the cause." src="https://images.pexels.com/photos/2317904/pexels-photo-2317904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-                         </figure>
-
-                         <div>
-                             <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?
-                             </p>
-                             <h1>
-                                 Marvellous Macaw
-                             </h1>
-                         </div>
-                     </article>
-                 </div>
-
-                 <div class="col-lg-4" data-aos="fade-left" data-aos-duration="800">
-                     <article>
-                         <figure>
-                             <img alt="A rather marvellous macaw, opening one of its wings to support the cause." src="https://images.pexels.com/photos/2317904/pexels-photo-2317904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-                         </figure>
-
-                         <div>
-                             <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?
-                             </p>
-                             <h1>
-                                 Marvellous Macaw
-                             </h1>
-                         </div>
-                     </article>
-                 </div>
+                 <?php endforeach;?>
 
 
              </div>
          </section>
-     </div>
+        </div>
+        <br><br><br><br><br>
 
      <script>
           $(".slider").owlCarousel({

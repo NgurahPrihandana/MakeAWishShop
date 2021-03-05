@@ -161,6 +161,27 @@ class Admin extends Controller {
         $this->view('admin/review',$data);
         $this->view('admin/layouts/footer');
     }
+
+    public function edit_review($id) {
+        $data['set_active'] = "review";
+        $data['title'] = "Review";
+        $data['spcReview'] = $this->model('Review_model')->getSpcReview($id);
+        $this->view('admin/layouts/header', $data);
+        $this->view('admin/layouts/navbar', $data);
+        $this->view('admin/layouts/topnav');
+        $this->view('admin/edit_review',$data);
+        $this->view('admin/layouts/footer');
+    }
+
+    public function update_review() {
+        if ($this->model("Review_model")->updateReview($_POST) > 0) {
+            Flasher::setFlash('success', 'Update review sukses');
+            header('Location: ' . BASEURL . '/admin/review');
+        } else {
+            Flasher::setFlash('error', 'Update review gagal');
+            header('Location: ' . BASEURL . '/admin/review');
+        }
+    }
 }
 
 

@@ -67,7 +67,7 @@
                                     <td><?= $p['kategori'] ?></td>
                                     <td><?= $p['tipe'] ?></td>
                                     <td><?= $p['size'] ?></td>
-                                    <td><?= $p['harga_product'] ?></td>
+                                    <td>$.<?= $p['harga_product'] ?>,00</td>
                                     <td><img src="<?= BASEURL; ?>/assets/images/product/<?= $p['gambar_product'] ?>" width="50px" alt=""></td>
                                     <td><?= substr($p['deskripsi_product'], 0, 50) ?></td>
                                     <td>

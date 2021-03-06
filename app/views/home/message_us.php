@@ -1,4 +1,5 @@
-    <!-- container -->
+<?php Flasher::flash() ?>
+  <!-- container -->
     <div class="container" style="margin-top: 5rem;">
       <!-- contact-us-banner -->
       <section

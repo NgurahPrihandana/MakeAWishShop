@@ -4,10 +4,14 @@ class Admin extends Controller {
     public function index() {
         $data['set_active'] = "index";
         $data['title'] = "Dashboard";
+        $data['kategori'] = $this->model('Kategori_model')->getAllKategori();
+        $data['product'] = $this->model('Product_model')->getAllProduct();
+        $data['message'] = $this->model("Message_model")->getAllMessage();
+        $data['review'] = $this->model('Review_model')->getAllReview();
         $this->view('admin/layouts/header',$data);
         $this->view('admin/layouts/navbar',$data);
         $this->view('admin/layouts/topnav');
-        $this->view('admin/index');
+        $this->view('admin/index',$data);
         $this->view('admin/layouts/footer');
     }
 

@@ -26,17 +26,20 @@ class Review_model {
          // find image location
          if (isset($_FILES['img_profile']['name']) && $_FILES['img_profile']['error'] <= 0) {
             $targetDir = __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "public" . DIRECTORY_SEPARATOR . "assets" . DIRECTORY_SEPARATOR . "images" . DIRECTORY_SEPARATOR . "review" . DIRECTORY_SEPARATOR;
-            $targetFile = $targetDir . basename($_FILES['img_profile']['name']);
-            $extension = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
-            $uploadOk = 1;
+            $rand = rand();
 
+            
             $check = getimagesize($_FILES['img_profile']['tmp_name']);
             if ($check != false) {
                 $uploadOk = 1;
             } else {
                 $uploadOk = 0;
             }
-
+            $xx = $rand.'_'.$_FILES['img_profile']['name'];
+            
+            $targetFile = $targetDir . $rand . "_" . basename($_FILES['img_profile']['name']);
+            $extension = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
+            $uploadOk = 1;
             if ($extension != "jpg" && $extension != "png" && $extension != "jpeg" && $extension != "svg") {
                 $uploadOk = 0;
             }
@@ -61,7 +64,7 @@ class Review_model {
             $this->db->query($query);
             $this->db->bind("name",$data['name']);
             $this->db->bind("review", $data['review']);
-            $this->db->bind("img_profile", $_FILES['img_profile']['name']);
+            $this->db->bind("img_profile", $xx);
             $this->db->bind("id_review", $data['id_review']);
             $this->db->execute();
             return $this->db->rowCount();

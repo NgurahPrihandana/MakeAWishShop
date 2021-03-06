@@ -17,9 +17,9 @@
           <p class="f-quicksand" style="margin-left: 2px">
             <?=$data['spcProduct']['deskripsi_product']?>
           </p>
-          <p>$.<?=$data['spcProduct']['harga_product']?>,00</p>
+          <p style="font-weight: bold; font-size: 1.3rem;">$.<?=$data['spcProduct']['harga_product']?>,00</p>
           <a
-            href=""
+            href="https://wa.me/6281236796214?text=Saya%20tertarik%20untuk%20membeli%20<?=$data['spcProduct']['nama_product'] ?>"
             class="btn-detail-product btn-1-detail-product"
           >
             <svg>

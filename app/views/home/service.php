@@ -21,14 +21,13 @@
                 <div class="content">
                   <h2 class="title">Mass Production</h2>
                   <p class="copy">
-                    Check out all of these gorgeous mountain trips with beautiful
-                    views of, you guessed it, the mountains
+                    We serve mass production services, with good punctuality and guaranteed quality
                   </p>
-                  <a href="" class="btn-season btn-1">
+                  <a href="<?=BASEURL?>/message/index" class="btn-season btn-1">
                     <svg>
                       <rect x="0" y="0" fill="none" width="100%" height="100%" />
                     </svg>
-                    See Product
+                    Contact Us
                   </a>
                 </div>
               </div>
@@ -39,14 +38,13 @@
                 <div class="content">
                   <h2 class="title">Sampling</h2>
                   <p class="copy">
-                    Check out all of these gorgeous mountain trips with beautiful
-                    views of, you guessed it, the mountains
+                    We provide sampling services with high efficiency and can be repeated with good tolerance
                   </p>
-                  <a href="https://twitter.com/Dave_Conner" class="btn-season btn-1">
+                  <a href="<?=BASEURL?>/message/index" class="btn-season btn-1">
                     <svg>
                       <rect x="0" y="0" fill="none" width="100%" height="100%" />
                     </svg>
-                    See Product
+                    Contact Us
                   </a>
                 </div>
               </div>
@@ -59,14 +57,13 @@
                 <div class="content">
                   <h2 class="title">Long Term Partnership</h2>
                   <p class="copy">
-                    Check out all of these gorgeous mountain trips with beautiful
-                    views of, you guessed it, the mountains
+                    We can serve you for a long period as a trusted partner
                   </p>
-                  <a href="https://twitter.com/Dave_Conner" class="btn-season btn-1">
+                  <a href="<?=BASEURL?>/message/index" class="btn-season btn-1">
                     <svg>
                       <rect x="0" y="0" fill="none" width="100%" height="100%" />
                     </svg>
-                    See Product
+                    Contact Us
                   </a>
                 </div>
               </div>
@@ -77,14 +74,13 @@
                 <div class="content">
                   <h2 class="title">Consultant</h2>
                   <p class="copy">
-                    Check out all of these gorgeous mountain trips with beautiful
-                    views of, you guessed it, the mountains
+                    We can discuss with you all the design issues and give you the best advice
                   </p>
-                  <a href="https://twitter.com/Dave_Conner" class="btn-season btn-1">
+                  <a href="<?=BASEURL?>/message/index" class="btn-season btn-1">
                     <svg>
                       <rect x="0" y="0" fill="none" width="100%" height="100%" />
                     </svg>
-                    See Product
+                    Contact Us
                   </a>
                 </div>
               </div>

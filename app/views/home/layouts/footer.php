@@ -1,4 +1,5 @@
- <!-- footer -->
+<br><br><br><br><br>
+<!-- footer -->
 <div class="container">
  <footer class="footer mt-4 f-poppins">
      <div class="footer__addr">
@@ -19,19 +20,19 @@
 
              <ul class="nav__ul" style="font-size: .9rem;">
                  <li>
-                     <a href="#">Products</a>
+                     <a href="<?=BASEURL?>/product/index">Products</a>
                  </li>
 
                  <li>
-                     <a href="#">Our Service</a>
+                     <a href="<?=BASEURL?>/service/index">Our Service</a>
                  </li>
 
                  <li>
-                     <a href="#">About Us</a>
+                     <a href="<?=BASEURL?>/about/index">About Us</a>
                  </li>
 
                  <li>
-                     <a href="#">Contact Us</a>
+                     <a href="<?=BASEURL?>/message/index">Contact Us</a>
                  </li>
              </ul>
          </li>

@@ -21,11 +21,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= BASEURL?>/assets/vendor/sweetalert2/dist/sweetalert2.min.css">
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- jquery -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <title><?= $data["title"]; ?></title>
 </head>
 

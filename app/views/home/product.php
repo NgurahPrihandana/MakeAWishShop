@@ -14,7 +14,7 @@
 
   <!-- category -->
   <section class="category">
-    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
     <div class="col">
         <a href="" style="text-decoration: none;">
           <div class="card h-100 active" data-aos="zoom-in" data-aos-delay="100">
@@ -54,7 +54,7 @@
     <div class="row f-poppins">
     <?php foreach($data['product'] as $p) :?>
       <div class="col-lg-3 col-md-6 mt-3">
-        <div class="card home-shadow-product" data-aos="flip-right">
+        <div class="card home-shadow-product card-product" data-aos="flip-right">
           <img src="<?= BASEURL ?>/assets/images/product/<?=$p['gambar_product']?>" class="card-img-top card-product" alt="..." />
           <div class="card-body">
             <h5 class="card-title"><?=$p['nama_product']?></h5>
@@ -71,7 +71,6 @@
 
 
   </section>
-  <br><br><br><br><br>
   <!-- end-prduct -->
 
   <!-- season -->

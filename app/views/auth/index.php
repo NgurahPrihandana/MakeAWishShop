@@ -18,7 +18,6 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == "login") {
   header("Location: " . BASEURL . "/admin/index");
 }
 
-Flasher::flash();
 ?>
  
  <!DOCTYPE html>
@@ -39,6 +38,8 @@ Flasher::flash();
   <link rel="stylesheet" href="<?=BASEURL?>/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
   <!-- Argon CSS -->
   <link rel="stylesheet" href="<?=BASEURL?>/assets/css/argon.css?v=1.1.0" type="text/css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </head>
 
 <body class="bg-default">
@@ -62,6 +63,7 @@ Flasher::flash();
         </svg>
       </div>
     </div>
+    <?=Flasher::flash();?>
     <!-- Page content -->
     <div class="container mt--8 pb-5">
       <div class="row justify-content-center">

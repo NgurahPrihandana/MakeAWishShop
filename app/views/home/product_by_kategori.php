@@ -61,7 +61,7 @@
             <div class="d-flex justify-content-between">
               <div class="price">$<?=$p['harga_product']?></div>
               <div class=""></div>
-              <a href="detail-product.html" class="btn btn-pink">See Detail</a>
+              <a href="<?=BASEURL?>/product/detail_product/<?=$p['id_product']?>" class="btn btn-pink">See Detail</a>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@
   <!-- end-prduct -->
 
   <!-- season -->
-  <section class="product-season">
+  <!-- <section class="product-season">
     <h1 class="text-center mt-5 text-bold">Season</h1>
     <div class="row mt-4">
       <div class="col-md-6">
@@ -151,7 +151,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- end-season -->
 
   <!-- category -->

@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 05, 2021 at 04:59 PM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Generation Time: Mar 06, 2021 at 09:54 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -87,7 +86,8 @@ CREATE TABLE `tb_message` (
 
 INSERT INTO `tb_message` (`id_message`, `name`, `subject`, `email`, `message`, `created_at`) VALUES
 (4, 'a', 'a', 'a@gmail.com', 'a', '0000-00-00 00:00:00'),
-(5, 'a', 'a', 'aa@gmail.com', 'a', '2021-03-03 14:05:14');
+(5, 'a', 'a', 'aa@gmail.com', 'a', '2021-03-03 14:05:14'),
+(6, 'yuSA', 'HAIIIIIIII', 'yusadarmawan5@gmail.com', 'hweyyyyyyy yoooooo', '2021-03-06 13:02:10');
 
 -- --------------------------------------------------------
 
@@ -113,7 +113,9 @@ CREATE TABLE `tb_product` (
 
 INSERT INTO `tb_product` (`id_product`, `nama_product`, `id_kategori`, `id_tipe`, `size`, `harga_product`, `gambar_product`, `deskripsi_product`, `created_at`) VALUES
 (13, 'Lisa Skirt', 5, 1, 'M', 275, 'detail-product.png', 'The dress covers her shoulders halfway and\r\n            flows down into a stylish draped neckline. It\'s a loose fit which\r\n            makes the dress look comfortable, yet elegant and stylish. Her arms\r\n            are only covered at her shoulders. Which is a good thing too, her\r\n            silky skin isn\'t something you want to cover up. <br /><br />\r\n\r\n            The dress\' waist is narrow, but it\'s a slim fit. A cloth ribbon has\r\n            been wrapped around her and is tied on one side. Below the waist the\r\n            dress fits snug around her and has an accordion style. The dress\r\n            reaches to just above her knees and is longer at the sides and back\r\n            of the dress. <br /><br />\r\n\r\n            She\'s wearing platforms, an ideal match for this dress. To top it\r\n            all off she\'s wearing a small, elegant hat and several lavish\r\n            bracelets.', '2021-03-04 15:31:20'),
-(14, 'Dalia T-Shirt', 6, 2, 'L', 200, 'aurel.png', 'The dress covers her shoulders halfway and\r\n            flows down into a stylish draped neckline. It\'s a loose fit which\r\n            makes the dress look comfortable, yet elegant and stylish. Her arms\r\n            are only covered at her shoulders. Which is a good thing too, her\r\n            silky skin isn\'t something you want to cover up. <br /><br />\r\n\r\n            The dress\' waist is narrow, but it\'s a slim fit. A cloth ribbon has\r\n            been wrapped around her and is tied on one side. Below the waist the\r\n            dress fits snug around her and has an accordion style. The dress\r\n            reaches to just above her knees and is longer at the sides and back\r\n            of the dress. <br /><br />\r\n\r\n            She\'s wearing platforms, an ideal match for this dress. To top it\r\n            all off she\'s wearing a small, elegant hat and several lavish\r\n            bracelets.', '2021-03-05 11:15:55');
+(14, 'Dalia T-Shirt', 6, 2, 'L', 200, 'aurel.png', 'The dress covers her shoulders halfway and\r\n            flows down into a stylish draped neckline. It\'s a loose fit which\r\n            makes the dress look comfortable, yet elegant and stylish. Her arms\r\n            are only covered at her shoulders. Which is a good thing too, her\r\n            silky skin isn\'t something you want to cover up. <br /><br />\r\n\r\n            The dress\' waist is narrow, but it\'s a slim fit. A cloth ribbon has\r\n            been wrapped around her and is tied on one side. Below the waist the\r\n            dress fits snug around her and has an accordion style. The dress\r\n            reaches to just above her knees and is longer at the sides and back\r\n            of the dress. <br /><br />\r\n\r\n            She\'s wearing platforms, an ideal match for this dress. To top it\r\n            all off she\'s wearing a small, elegant hat and several lavish\r\n            bracelets.', '2021-03-05 11:15:55'),
+(15, 'Yuzu Dress', 1, 2, 'S | M | L', 175, 'product-3.png', 'The dress covers her shoulders halfway and\r\n            flows down into a stylish draped neckline. It\'s a loose fit which\r\n            makes the dress look comfortable, yet elegant and stylish. Her arms\r\n            are only covered at her shoulders. Which is a good thing too, her\r\n            silky skin isn\'t something you want to cover up. <br /><br />\r\n\r\n            The dress\' waist is narrow, but it\'s a slim fit. A cloth ribbon has\r\n            been wrapped around her and is tied on one side. Below the waist the\r\n            dress fits snug around her and has an accordion style. The dress\r\n            reaches to just above her knees and is longer at the sides and back\r\n            of the dress. <br /><br />\r\n\r\n            She\'s wearing platforms, an ideal match for this dress. To top it\r\n            all off she\'s wearing a small, elegant hat and several lavish\r\n            bracelets.', '2021-03-06 13:12:28'),
+(16, 'Skull T-Shirt', 6, 2, 'L | XL', 750, 'product-4.png', 'The dress covers her shoulders halfway and\r\n            flows down into a stylish draped neckline. It\'s a loose fit which\r\n            makes the dress look comfortable, yet elegant and stylish. Her arms\r\n            are only covered at her shoulders. Which is a good thing too, her\r\n            silky skin isn\'t something you want to cover up. <br /><br />\r\n\r\n            The dress\' waist is narrow, but it\'s a slim fit. A cloth ribbon has\r\n            been wrapped around her and is tied on one side. Below the waist the\r\n            dress fits snug around her and has an accordion style. The dress\r\n            reaches to just above her knees and is longer at the sides and back\r\n            of the dress. <br /><br />\r\n\r\n            She\'s wearing platforms, an ideal match for this dress. To top it\r\n            all off she\'s wearing a small, elegant hat and several lavish\r\n            bracelets.', '2021-03-06 13:44:31');
 
 -- --------------------------------------------------------
 
@@ -133,9 +135,9 @@ CREATE TABLE `tb_review` (
 --
 
 INSERT INTO `tb_review` (`id_review`, `name`, `review`, `img_profile`) VALUES
-(1, 'Abdul', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?', 'founder-1.png'),
-(2, 'Wahyu', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?', 'founder-2.png'),
-(3, 'Gana', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?', 'founder-1.png');
+(1, 'Abdul', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?', '67936392_founder-2.png'),
+(2, 'Wahyu', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?', '2001719930_founder-1.png'),
+(3, 'Gantot', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?', '1183955242_founder-2.png');
 
 -- --------------------------------------------------------
 
@@ -212,19 +214,19 @@ ALTER TABLE `tb_auth`
 -- AUTO_INCREMENT for table `tb_kategori`
 --
 ALTER TABLE `tb_kategori`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `tb_message`
 --
 ALTER TABLE `tb_message`
-  MODIFY `id_message` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_message` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tb_product`
 --
 ALTER TABLE `tb_product`
-  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `tb_review`

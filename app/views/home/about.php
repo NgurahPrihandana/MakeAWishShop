@@ -58,43 +58,46 @@
                 </div>
         </div>
     </section>
-
+  </div>
     <!-- our-location -->
     <section class="our-location mt-5">
-      <h1 class="text-center pt-4 f-poppins" data-aos="fade-in">About Our Place</h1>
-      <div class="row pt-3 px-3">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-          <img src="<?=BASEURL?>/assets/images/make-a-wish.png" width="100%" alt="" />
+      <div class="container">
+        <h1 class="text-center pt-4 f-poppins" style="font-size: 2rem;" data-aos="fade-in">About Our Place</h1>
+        <div class="row pt-3 px-3">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="<?=BASEURL?>/assets/images/make-a-wish.png" width="100%" alt="" />
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="100">
+            <h3 class="f-poppins">Make A Wish</h3>
+            <p class="f-quicksand">
+              Make A Wish is our shop located at Basangkasa Street. The location is very strategic, namely in the kuta
+              area. Kuta area is an area that is very easily accessible, the area is also close to other shops so you can
+              easily compare how the quality of our clothes is better than others. Please think about coming if you are
+              looking for clothes.
+            </p>
+          </div>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="100">
-          <h3 class="f-poppins">Make A Wish</h3>
-          <p class="f-quicksand">
-            Make A Wish is our shop located at Basangkasa Street. The location is very strategic, namely in the kuta
-            area. Kuta area is an area that is very easily accessible, the area is also close to other shops so you can
-            easily compare how the quality of our clothes is better than others. Please think about coming if you are
-            looking for clothes.
-          </p>
-        </div>
-      </div>
-      <div class="row pt-3 px-3 about-us-column-reverse">
-        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-right" data-aos-delay="100">
-          <h3 class="f-poppins">Jack Garment</h3>
-          <p class="f-quicksand">
-            Jack Garment is located in Sumandang 3 C no 8, Batubulan, Gianyar Bali. Some of our worker work there to
-            check the product quality and prepare it for shipment. While our tailors can work from home, or come to our
-            garments, we have a very large team, so they can accommodate many orders at once, we make it easy for any
-            shop owner who wants to outsource their production to other places.
-          </p>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-          <img src="<?=BASEURL?>/assets/images/jack-garment.png" width="100%" alt="" />
+        <div class="row pt-3 px-3 about-us-column-reverse">
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-right" data-aos-delay="100">
+            <h3 class="f-poppins">Jack Garment</h3>
+            <p class="f-quicksand">
+              Jack Garment is located in Sumandang 3 C no 8, Batubulan, Gianyar Bali. Some of our worker work there to
+              check the product quality and prepare it for shipment. While our tailors can work from home, or come to our
+              garments, we have a very large team, so they can accommodate many orders at once, we make it easy for any
+              shop owner who wants to outsource their production to other places.
+            </p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <img src="<?=BASEURL?>/assets/images/jack-garment.png" width="100%" alt="" />
+          </div>
         </div>
       </div>
     </section>
     <!-- end-our-location -->
+    <div class="container">
     <!-- our-founder -->
     <section class="our-founder mt-5">
-      <h1 class="text-center f-poppins">Our Founder</h1>
+      <h1 class="text-center f-poppins" style="font-size: 2rem;">Our Founder</h1>
       <div class="kontainer">
         <div class="row mt-5 p-desktop">
           <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-right">
@@ -146,8 +149,9 @@
     <!-- end-our-founder -->
 
     <!-- our-goal -->
+    </div>
     <section class="our-goal mt-5">
-      <h1 class="text-center pt-4 f-poppins">Our Goal</h1>
+      <h1 class="text-center pt-4 f-poppins" style="font-size: 2rem;">Our Goal</h1>
       <div class="kontainer">
       <div class="row  g-4">
         <div class="col-lg-4" data-aos="fade-right">
@@ -178,8 +182,7 @@
       </div>
     </section>
     <!-- end-our-goal -->
-  </div>
-  <!-- end-container -->
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 

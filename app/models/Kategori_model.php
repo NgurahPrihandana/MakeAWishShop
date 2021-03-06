@@ -21,18 +21,21 @@ class Kategori_model
     {
         if (isset($_FILES['icon_kategori']['name']) && $_FILES['icon_kategori']['error'] <= 0) {
             // find image location
-            $targetDir = __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "public" . DIRECTORY_SEPARATOR . "assets" . DIRECTORY_SEPARATOR . "images" . DIRECTORY_SEPARATOR . "icon";
-            $targetFile = $targetDir . basename($_FILES['icon_kategori']['name']);
-            $extension = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
-            $uploadOk = 1;
-    
+            $targetDir = __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "public" . DIRECTORY_SEPARATOR . "assets" . DIRECTORY_SEPARATOR . "images" . DIRECTORY_SEPARATOR . "icon".DIRECTORY_SEPARATOR;
+            $rand = rand();
+            
             $check = getimagesize($_FILES['icon_kategori']['tmp_name']);
             if ($check != false) {
                 $uploadOk = 1;
             } else {
                 $uploadOk = 0;
             }
-    
+            $xx = $rand.'_'.$_FILES['icon_kategori']['name'];
+            
+            $targetFile = $targetDir . $rand . "_" . basename($_FILES['icon_kategori']['name']);
+            $extension = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
+            $uploadOk = 1;
+
             if ($extension != "jpg" && $extension != "png" && $extension != "jpeg" && $extension != "svg") {
                 $uploadOk = 0;
             }
@@ -45,7 +48,7 @@ class Kategori_model
                                     (:kategori,:icon_kategori)";
                     $this->db->query($query);
                     $this->db->bind("kategori", $data['kategori']);
-                    $this->db->bind("icon_kategori", $_FILES['icon_kategori']['name']);
+                    $this->db->bind("icon_kategori", $xx);
                     $this->db->execute();
                     return $this->db->rowCount();       
                 } else {
@@ -70,16 +73,20 @@ class Kategori_model
         // find image location
         if (isset($_FILES['icon_kategori']['name']) && $_FILES['icon_kategori']['error'] <= 0) {
             $targetDir = __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "public" . DIRECTORY_SEPARATOR . "assets" . DIRECTORY_SEPARATOR . "images" . DIRECTORY_SEPARATOR . "icon" . DIRECTORY_SEPARATOR;
-            $targetFile = $targetDir . basename($_FILES['icon_kategori']['name']);
-            $extension = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
-            $uploadOk = 1;
-
+            $rand = rand();
+            
+            
             $check = getimagesize($_FILES['icon_kategori']['tmp_name']);
             if ($check != false) {
                 $uploadOk = 1;
             } else {
                 $uploadOk = 0;
             }
+            $xx = $rand.'_'.$_FILES['icon_kategori']['name'];
+
+            $targetFile = $targetDir . $rand . "_" . basename($_FILES['icon_kategori']['name']);
+            $extension = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
+            $uploadOk = 1;
 
             if ($extension != "jpg" && $extension != "png" && $extension != "jpeg" && $extension != "svg") {
                 $uploadOk = 0;
@@ -102,7 +109,7 @@ class Kategori_model
                         WHERE id_kategori = :id_kategori";
             $this->db->query($query);
             $this->db->bind("kategori", $data['kategori']);
-            $this->db->bind("icon_kategori", $_FILES['icon_kategori']['name']);
+            $this->db->bind("icon_kategori", $xx);
             $this->db->bind("id_kategori", $data['id_kategori']);
             $this->db->execute();
             return $this->db->rowCount();

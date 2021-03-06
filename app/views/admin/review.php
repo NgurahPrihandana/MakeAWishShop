@@ -56,7 +56,7 @@
                                     <td><?= $i; ?></td>
                                     <td><?= $r['name']; ?></td>
                                     <td><?= substr($r['review'], 0, 50); ?>...</td>
-                                    <td><?= $r['img_profile'] ?></td>
+                                    <td><img src="<?= BASEURL; ?>/assets/images/review/<?= $r['img_profile'] ?>" width="50px" alt=""></td>
                                     <td>
                                         <a href="<?= BASEURL ?>/admin/edit_review/<?= $r['id_review']; ?>" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
                                             <i class="fas fa-user-edit"></i>

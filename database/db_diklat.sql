@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 06, 2021 at 09:54 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Generation Time: Mar 07, 2021 at 07:19 AM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -112,7 +113,6 @@ CREATE TABLE `tb_product` (
 --
 
 INSERT INTO `tb_product` (`id_product`, `nama_product`, `id_kategori`, `id_tipe`, `size`, `harga_product`, `gambar_product`, `deskripsi_product`, `created_at`) VALUES
-(13, 'Lisa Skirt', 5, 1, 'M', 275, 'detail-product.png', 'The dress covers her shoulders halfway and\r\n            flows down into a stylish draped neckline. It\'s a loose fit which\r\n            makes the dress look comfortable, yet elegant and stylish. Her arms\r\n            are only covered at her shoulders. Which is a good thing too, her\r\n            silky skin isn\'t something you want to cover up. <br /><br />\r\n\r\n            The dress\' waist is narrow, but it\'s a slim fit. A cloth ribbon has\r\n            been wrapped around her and is tied on one side. Below the waist the\r\n            dress fits snug around her and has an accordion style. The dress\r\n            reaches to just above her knees and is longer at the sides and back\r\n            of the dress. <br /><br />\r\n\r\n            She\'s wearing platforms, an ideal match for this dress. To top it\r\n            all off she\'s wearing a small, elegant hat and several lavish\r\n            bracelets.', '2021-03-04 15:31:20'),
 (14, 'Dalia T-Shirt', 6, 2, 'L', 200, 'aurel.png', 'The dress covers her shoulders halfway and\r\n            flows down into a stylish draped neckline. It\'s a loose fit which\r\n            makes the dress look comfortable, yet elegant and stylish. Her arms\r\n            are only covered at her shoulders. Which is a good thing too, her\r\n            silky skin isn\'t something you want to cover up. <br /><br />\r\n\r\n            The dress\' waist is narrow, but it\'s a slim fit. A cloth ribbon has\r\n            been wrapped around her and is tied on one side. Below the waist the\r\n            dress fits snug around her and has an accordion style. The dress\r\n            reaches to just above her knees and is longer at the sides and back\r\n            of the dress. <br /><br />\r\n\r\n            She\'s wearing platforms, an ideal match for this dress. To top it\r\n            all off she\'s wearing a small, elegant hat and several lavish\r\n            bracelets.', '2021-03-05 11:15:55'),
 (15, 'Yuzu Dress', 1, 2, 'S | M | L', 175, 'product-3.png', 'The dress covers her shoulders halfway and\r\n            flows down into a stylish draped neckline. It\'s a loose fit which\r\n            makes the dress look comfortable, yet elegant and stylish. Her arms\r\n            are only covered at her shoulders. Which is a good thing too, her\r\n            silky skin isn\'t something you want to cover up. <br /><br />\r\n\r\n            The dress\' waist is narrow, but it\'s a slim fit. A cloth ribbon has\r\n            been wrapped around her and is tied on one side. Below the waist the\r\n            dress fits snug around her and has an accordion style. The dress\r\n            reaches to just above her knees and is longer at the sides and back\r\n            of the dress. <br /><br />\r\n\r\n            She\'s wearing platforms, an ideal match for this dress. To top it\r\n            all off she\'s wearing a small, elegant hat and several lavish\r\n            bracelets.', '2021-03-06 13:12:28'),
 (16, 'Skull T-Shirt', 6, 2, 'L | XL', 750, 'product-4.png', 'The dress covers her shoulders halfway and\r\n            flows down into a stylish draped neckline. It\'s a loose fit which\r\n            makes the dress look comfortable, yet elegant and stylish. Her arms\r\n            are only covered at her shoulders. Which is a good thing too, her\r\n            silky skin isn\'t something you want to cover up. <br /><br />\r\n\r\n            The dress\' waist is narrow, but it\'s a slim fit. A cloth ribbon has\r\n            been wrapped around her and is tied on one side. Below the waist the\r\n            dress fits snug around her and has an accordion style. The dress\r\n            reaches to just above her knees and is longer at the sides and back\r\n            of the dress. <br /><br />\r\n\r\n            She\'s wearing platforms, an ideal match for this dress. To top it\r\n            all off she\'s wearing a small, elegant hat and several lavish\r\n            bracelets.', '2021-03-06 13:44:31');
@@ -156,7 +156,6 @@ CREATE TABLE `tb_tipe` (
 --
 
 INSERT INTO `tb_tipe` (`id_tipe`, `tipe`, `created_at`) VALUES
-(1, 'Top Product', '2021-03-03 23:44:27'),
 (2, 'Featured Product', '2021-03-03 23:44:27'),
 (3, 'none', '2021-03-03 23:44:27');
 

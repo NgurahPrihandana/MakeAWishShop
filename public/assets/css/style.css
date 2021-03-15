@@ -76,7 +76,7 @@ body, html {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .category .card {
@@ -800,6 +800,10 @@ border-radius: 15px;
 	.carousel-control-next {
 		transform: translateX(30px);
 	}
+
+	.banner .text-banner {
+	height: 80vh;
+}
 }
 
 @media only screen and (max-width: 767px) {
@@ -811,6 +815,8 @@ border-radius: 15px;
 		background-repeat: no-repeat;
 		background-attachment: fixed; */
 	}
+
+
 
 .about-us-column-reverse {
 		flex-direction: column-reverse;

@@ -56,10 +56,10 @@
                     <td><?= $value['kategori'] ?></td>
                     <td><img src="<?= BASEURL; ?>/assets/images/icon/<?= $value['icon_kategori'] ?>" width="50px" alt=""></td>
                     <td>
-                      <a href="<?= BASEURL ?>/admin/edit_kategori/<?= $value['id_kategori']; ?>" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+                      <a href="<?= BASEURL ?>/admin/edit_kategori/<?= $value['id_kategori']; ?>" class="table-action" data-toggle="tooltip" data-original-title="Edit kategori">
                         <i class="fas fa-user-edit"></i>
                       </a>
-                      <a href="<?= BASEURL ?>/admin/hapus_kategori/<?= $value['id_kategori']; ?>" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+                      <a href="<?= BASEURL ?>/admin/hapus_kategori/<?= $value['id_kategori']; ?>" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete kategori">
                         <i class="fas fa-trash"></i>
                       </a>
                     </td>

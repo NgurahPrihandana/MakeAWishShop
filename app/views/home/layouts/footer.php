@@ -8,9 +8,9 @@
          <h2>Contact</h2>
 
          <address>
-             5534 Somewhere In. The World 22193-10212<br />
+             Denpasar. Bali<br />
 
-             <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+             <a class="footer__btn" href="mailto:prihandana27@gmail.com">Email Us</a>
          </address>
      </div>
 

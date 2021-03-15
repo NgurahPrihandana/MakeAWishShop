@@ -8,93 +8,92 @@
       </div>
       <!-- end-about-us-banner -->
       <!-- about-us-text-banner -->
-    
+
       <!-- end-about-us-text-banner -->
     </section>
 
     <section>
-        <div class="row about-us-text-banner mx-md-4" style="margin-top: -9rem;">
-          <div class="col-lg-6 mt-5" data-aos="fade-up" data-aos-delay="100">
-                  <div class="card px-3">
-                    <h2 class="text-center f-poppins mt-3">About Make A Wish Shop</h2>
-                    <hr />
-                    <p class="f-quicksand">
-                      At Make A Wish Shop, we believe in one thing: YOU <br />
-                      <br />
-        
-                      Make A Wish Shop believes that women have extraordinary abilities, are competent, and able to do anything.
-                      <br />
-                      <br />
-        
-                      For us, an attractive dress is a means to achieve the goal, which is when a woman feels comfortable, then
-                      whatever you wear will look amazing. The most important thing is how a woman can appear more
-                      confident, dare to display her personality, and shine in all aspects. <br />
-                      <br />
-        
-                      Make A Wish Shop is here to help you dress and be yourself - unabashed, uninhibited, undeniably, you.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-lg-6 mt-5" data-aos="fade-up" data-aos-delay="100">
-                  <div class="card px-3">
-                    <h2 class="text-center f-poppins mt-3">About Make A Wish Shop</h2>
-                    <hr />
-                    <p class="f-quicksand">
-                      At Make A Wish Shop, we believe in one thing: YOU <br />
-                      <br />
-                
-                      Make A Wish Shop believes that women have extraordinary abilities, are competent, and able to do anything.
-                      <br />
-                      <br />
-                
-                      For us, an attractive dress is a means to achieve the goal, which is when a woman feels comfortable, then
-                      whatever you wear will look amazing. The most important thing is how a woman can appear more
-                      confident, dare to display her personality, and shine in all aspects. <br />
-                      <br />
-                
-                      Make A Wish Shop is here to help you dress and be yourself - unabashed, uninhibited, undeniably, you.
-                    </p>
-                  </div>
-                </div>
-        </div>
-    </section>
-  </div>
-    <!-- our-location -->
-    <section class="our-location mt-5">
-      <div class="container">
-        <h1 class="text-center pt-4 f-poppins" style="font-size: 2rem;" data-aos="fade-in">About Our Place</h1>
-        <div class="row pt-3 px-3">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="<?=BASEURL?>/assets/images/make-a-wish.png" width="100%" alt="" />
-          </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="100">
-            <h3 class="f-poppins">Make A Wish</h3>
+      <div class="row about-us-text-banner mx-md-4" style="margin-top: -9rem;">
+        <div class="col-lg-6 mt-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="card px-3">
+            <h2 class="text-center f-poppins mt-3">About Make A Wish Shop</h2>
+            <hr />
             <p class="f-quicksand">
-              Make A Wish is our shop located at Basangkasa Street. The location is very strategic, namely in the kuta
-              area. Kuta area is an area that is very easily accessible, the area is also close to other shops so you can
-              easily compare how the quality of our clothes is better than others. Please think about coming if you are
-              looking for clothes.
+              At Make A Wish Shop, we believe in one thing: YOU <br />
+              <br />
+
+              Make A Wish Shop believes that women have extraordinary abilities, are competent, and able to do anything.
+              <br />
+              <br />
+
+              For us, an attractive dress is a means to achieve the goal, which is when a woman feels comfortable, then
+              whatever you wear will look amazing. The most important thing is how a woman can appear more
+              confident, dare to display her personality, and shine in all aspects. <br />
+              <br />
+
+              Make A Wish Shop is here to help you dress and be yourself - unabashed, uninhibited, undeniably, you.
             </p>
           </div>
         </div>
-        <div class="row pt-3 px-3 about-us-column-reverse">
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-right" data-aos-delay="100">
-            <h3 class="f-poppins">Jack Garment</h3>
+        <div class="col-lg-6 mt-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="card px-3">
+            <h2 class="text-center f-poppins mt-3">About Jack Garment</h2>
+            <hr />
             <p class="f-quicksand">
-              Jack Garment is located in Sumandang 3 C no 8, Batubulan, Gianyar Bali. Some of our worker work there to
-              check the product quality and prepare it for shipment. While our tailors can work from home, or come to our
-              garments, we have a very large team, so they can accommodate many orders at once, we make it easy for any
-              shop owner who wants to outsource their production to other places.
+              In 2014, Jack Garment was founded as a bridge between fashion brands and garment factories. No matter where you are at
+              in your business we are here to help.
+              Established brands, that have the capacity to manufacture overseas, have access to a trusted partner that has the
+              expertise for on-time, to spec deliveries while minimizing costs.
+
+              We provide both custom manufacturing solutions and
+              private label products saving time and money.
+              <br /><br>
+
+              Our mission is to make it easier for any size brand to sell responsibly made products.
+              <br><br>
+              Make A Wish Shop is here to help you dress and be yourself - unabashed, uninhibited, undeniably, you.
             </p>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <img src="<?=BASEURL?>/assets/images/jack-garment.png" width="100%" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <!-- end-our-location -->
+  </div>
+  <!-- our-location -->
+  <section class="our-location mt-5">
     <div class="container">
+      <h1 class="text-center pt-4 f-poppins" style="font-size: 2rem;" data-aos="fade-in">About Our Place</h1>
+      <div class="row pt-3 px-3">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <img src="<?= BASEURL ?>/assets/images/make-a-wish.png" width="100%" alt="" />
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="100">
+          <h3 class="f-poppins">Make A Wish</h3>
+          <p class="f-quicksand">
+            Make A Wish is our shop located at Basangkasa Street. The location is very strategic, namely in the kuta
+            area. Kuta area is an area that is very easily accessible, the area is also close to other shops so you can
+            easily compare how the quality of our clothes is better than others. Please think about coming if you are
+            looking for clothes.
+          </p>
+        </div>
+      </div>
+      <div class="row pt-3 px-3 about-us-column-reverse">
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="f-poppins">Jack Garment</h3>
+          <p class="f-quicksand">
+            Jack Garment is located in Sumandang 3 C no 8, Batubulan, Gianyar Bali. Some of our worker work there to
+            check the product quality and prepare it for shipment. While our tailors can work from home, or come to our
+            garments, we have a very large team, so they can accommodate many orders at once, we make it easy for any
+            shop owner who wants to outsource their production to other places.
+          </p>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+          <img src="<?= BASEURL ?>/assets/images/jack-garment.png" width="100%" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end-our-location -->
+  <div class="container">
     <!-- our-founder -->
     <section class="our-founder mt-5">
       <h1 class="text-center f-poppins" style="font-size: 2rem;">Our Founder</h1>
@@ -105,7 +104,7 @@
               <!-- Post-->
               <div class="post-module">
                 <!-- Thumbnail-->
-                <div class="thumbnail"><img alt="" src="<?=BASEURL?>/assets/images/founder-1.png" /></div>
+                <div class="thumbnail"><img alt="" src="<?= BASEURL ?>/assets/images/founder-1.png" /></div>
 
                 <!-- Post Content-->
                 <div class="post-content">
@@ -116,7 +115,7 @@
                     hobby in selling with the support of her husband, Gusti Ngurah.
                   </p>
                   <div class="post-meta">
-                    
+
                   </div>
                 </div>
               </div>
@@ -127,7 +126,7 @@
               <!-- Post-->
               <div class="post-module">
                 <!-- Thumbnail-->
-                <div class="thumbnail"><img alt="" src="<?=BASEURL?>/assets/images/founder-2.png"/></div>
+                <div class="thumbnail"><img alt="" src="<?= BASEURL ?>/assets/images/founder-2.png" /></div>
                 <!-- Post Content-->
                 <div class="post-content">
                   <h1 class="title">Gusti Ngurah</h1>
@@ -137,7 +136,7 @@
                     wife's business, until he finally quit working to help full time when their business has grown.
                   </p>
                   <div class="post-meta">
-                   
+
                   </div>
                 </div>
               </div>
@@ -149,14 +148,14 @@
     <!-- end-our-founder -->
 
     <!-- our-goal -->
-    </div>
-    <section class="our-goal mt-5">
-      <h1 class="text-center pt-4 f-poppins" style="font-size: 2rem;">Our Goal</h1>
-      <div class="kontainer">
+  </div>
+  <section class="our-goal mt-5">
+    <h1 class="text-center text-dark pt-4 f-poppins" style="font-size: 2rem;">Our Goal</h1>
+    <div class="kontainer">
       <div class="row  g-4">
         <div class="col-lg-4" data-aos="fade-right">
           <div class="card h-100 active">
-            <img src="<?=BASEURL?>/assets/images/icon/time.svg" class="m-auto mt-4" width="23%" alt="..." />
+            <img src="<?= BASEURL ?>/assets/images/icon/time.svg" class="m-auto mt-4" width="23%" alt="..." />
             <div class="card-body">
               <h5 class="card-title text-center f-poppins">Always In Time</h5>
             </div>
@@ -164,7 +163,7 @@
         </div>
         <div class="col-lg-4">
           <div class="card h-100" data-aos="fade-up">
-            <img src="<?=BASEURL?>/assets/images/icon/medal.svg" class="m-auto mt-4" width="20%" alt="..." />
+            <img src="<?= BASEURL ?>/assets/images/icon/medal.svg" class="m-auto mt-4" width="20%" alt="..." />
             <div class="card-body">
               <h5 class="card-title text-center f-poppins">Neat and Clean</h5>
             </div>
@@ -172,25 +171,24 @@
         </div>
         <div class="col-lg-4">
           <div class="card h-100" data-aos="fade-left">
-            <img src="<?=BASEURL?>/assets/images/icon/careful.svg" class="m-auto mt-4" width="28%" alt="..." />
+            <img src="<?= BASEURL ?>/assets/images/icon/careful.svg" class="m-auto mt-4" width="28%" alt="..." />
             <div class="card-body">
               <h5 class="card-title text-center f-poppins">Careful</h5>
             </div>
           </div>
         </div>
       </div>
-      </div>
-    </section>
-    <!-- end-our-goal -->
-  
+    </div>
+  </section>
+  <!-- end-our-goal -->
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   <script>
-       $(window).load(function () {
-      $(".post-module").hover(function () {
-        $(this).find(".description").stop().animate(
-          {
+    $(window).load(function() {
+      $(".post-module").hover(function() {
+        $(this).find(".description").stop().animate({
             height: "toggle",
             opacity: "toggle",
           },

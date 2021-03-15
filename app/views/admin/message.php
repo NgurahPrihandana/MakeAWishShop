@@ -64,7 +64,7 @@
                                     <td><?= $value['message'] ?></td>
                                     <td><?= $value['created_at'] ?></td>
                                     <td>
-                                        <a href="<?= BASEURL ?>/admin/hapus_message/<?= $value['id_message'] ?>" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+                                        <a href="<?= BASEURL ?>/admin/hapus_message/<?= $value['id_message'] ?>" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete message">
                                             <i class="fas fa-trash"></i>
                                         </a>
                                     </td>

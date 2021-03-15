@@ -3,7 +3,7 @@
          <div class="container">
              <div class="row">
                  <div class="col-lg-8 col-sm-12 d-flex flex-column align-items-center justify-content-center f-poppins">
-                     <div class="text-banner d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in" data-aos-duration="800">
+                     <div class="text-banner homepage-fix d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in" data-aos-duration="800">
                          <h1 class="text-bold text-center">Jack Garment & Make A Wish Shop</h1>
                          <div class="f-quicksand">
                              <h2 class="text-center">High Quality Product <br> & <br>Highly Experienced Worker</h2>

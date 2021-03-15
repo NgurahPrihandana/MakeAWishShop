@@ -115,7 +115,7 @@
                                             <select class="form-control" id="exampleFormControlSelect1" name="id_kategori">
                                                 <option disabled hidden selected>Pilih Kategori</option>
                                                 <?php foreach ($data['kategori'] as $k) : ?>
-                                                    <option class="text-success" value="<?= $k['id_kategori'] ?>"><?= $k['kategori'] ?></option>
+                                                    <option value="<?= $k['id_kategori'] ?>"><?= $k['kategori'] ?></option>
                                                 <?php endforeach; ?>
                                             </select>
                                         </div>
